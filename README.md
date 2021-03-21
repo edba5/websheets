@@ -2,12 +2,13 @@
 
 This is an open-sourced project that let's you build websites simply by filling in a Google Sheets template.
 
-**Pre-configured With:**
+**Tech Stack:**
 
-- TailwindCSS
+- Google Sheets
+- React
+- Next.js
+- Tailwindcss
 - Typescript
-- React Testing Library, Cypress
-- ESLint, Prettier, Lint-staged, Husky
 
 ## How to use
 
