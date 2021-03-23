@@ -1,8 +1,8 @@
 import { GetStaticProps } from "next"
 import React from "react"
-import Hero from '../component/Home/hero'
-import TemplatesList from '../component/Home/templates-list'
-import Layout from '../component/Layout'
+import Hero from '../components/Home/hero'
+import TemplatesList from '../components/Home/templates-list'
+import Layout from '../components/Layout'
 import { getItems, getSiteData } from "../services/sheet"
 import { SiteDataProvider } from "../utils/SiteDataContext"
 
