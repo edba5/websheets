@@ -1,11 +1,13 @@
 module.exports = {
 	purge: ['./pages/**/*.tsx', './components/**/*.tsx', './styles/**/*.css'],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: 'class', // or 'media' or 'class'
 	theme: {
 		extend: {},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			ringWidth: ['hover'],
+		},
 	},
 	plugins: [],
 }

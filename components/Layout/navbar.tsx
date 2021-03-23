@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { useContext } from 'react'
+import {useContext} from 'react'
 import SiteDataContext from '../../utils/SiteDataContext'
 import GiftIcon from './gift-icon'
 
@@ -20,7 +19,7 @@ export default function Navbar() {
 			<div>
 				<a
 					href={navMenuUrl}
-					className="text-gray-600 hover:underline"
+					className="text-gray-600 dark:text-gray-400 hover:underline"
 					target="_blank"
 				>
 					{navMenuText}
