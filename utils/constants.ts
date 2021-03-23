@@ -84,3 +84,43 @@ export const templates: Templates[] = [
 		secondaryActionUrl: '',
 	},
 ]
+
+export interface Item {
+	title: string
+	tags: string[]
+	imageUrl: string
+	destinationUrl: string
+	hide: boolean
+}
+
+export interface SiteData {
+	// GENERAL
+	logoUrl: string
+	themeColor: string
+	darkMode: boolean
+	// NAVBAR
+	navButtonText: string
+	navButtonUrl: string
+	navMenuText: string
+	navMenuUrl: string
+	//HERO
+	heroTitle: string
+	heroDescription: string
+	//FOOTER
+	footerText: string
+	creditText: string
+	creditAuthor: string
+	creditUrl: string
+	//SEO
+	seoTitle: string
+	seoDescription: string
+	seoBannerUrl: string
+}
+
+export enum SheetsDimension {
+	ROWS = 'ROWS',
+	COLUMNS = 'COLUMNS',
+}
+
+export const SHEET_ID = process.env.SHEET_ID
+export const SHEET_KEY = process.env.SHEET_KEY

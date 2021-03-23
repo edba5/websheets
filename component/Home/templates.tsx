@@ -1,19 +1,19 @@
-import {templates} from './constants'
-
-export default function Templates() {
+export default function Templates({items}) {
 	const renderTags = tags => {
 		return tags.map(tag => (
-			<span className="font-light text-gray-500 mr-2">#{tag}</span>
+			<span className="font-light text-gray-500 mr-2" key={tag}>#{tag}</span>
 		))
 	}
 
 	const renderTemplates = () => {
-		return templates.map(({title, tags, imageUrl}) => (
-			<div>
-				<img
-					src={imageUrl}
-					className="rounded-xl shadow-lg hover:shadow-2xl cursor-pointer w-full"
-				/>
+		return items.map(({title, tags, imageUrl, destinationUrl}, index) => (
+			<div key={`${title}+${index}`}>
+				<a href={destinationUrl} target="_blank">
+					<img
+						src={imageUrl}
+						className="rounded-xl shadow-lg hover:shadow-2xl cursor-pointer w-full"
+					/>
+				</a>
 				<h3 className="font-semibold text-xl mt-4">{title}</h3>
 				{renderTags(tags)}
 			</div>

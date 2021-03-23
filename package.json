@@ -21,6 +21,7 @@
 		"setup": "yarn install && yarn validate"
 	},
 	"dependencies": {
+		"axios": "^0.21.1",
 		"identity-obj-proxy": "^3.0.0",
 		"next": "10.0.7",
 		"react": "17.0.1",

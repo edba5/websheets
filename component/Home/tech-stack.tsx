@@ -1,10 +1,10 @@
-import {techStack} from './constants'
+import {techStack} from '../../utils/constants'
 import Image from 'next/image'
 
 export default function TechStack() {
 	const renderSingleTech = () => {
 		return techStack.map(singleTech => (
-			<li className="inline-block">
+			<li className="inline-block" key={singleTech.name}>
 				<Image
 					src={singleTech.icon}
 					alt={singleTech.name}
