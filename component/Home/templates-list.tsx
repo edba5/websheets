@@ -1,4 +1,4 @@
-export default function Templates({items}) {
+export default function TemplatesList({items}) {
 	const renderTags = tags => {
 		return tags.map(tag => (
 			<span className="font-light text-gray-500 mr-2" key={tag}>#{tag}</span>

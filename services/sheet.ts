@@ -49,10 +49,10 @@ const transformSiteData = (siteDataValue: any[]): SiteData => ({
 	heroTitle: siteDataValue[10],
 	heroDescription: siteDataValue[11],
 	//FOOTER
-	footerText: siteDataValue[13],
-	creditText: siteDataValue[14],
-	creditAuthor: siteDataValue[15],
-	creditUrl: siteDataValue[16],
+	copyrightText: siteDataValue[13],
+	footerText: siteDataValue[14],
+	footerLinkableText: siteDataValue[15],
+	footerLinkableUrl: siteDataValue[16],
 	//SEO
 	seoTitle: siteDataValue[18],
 	seoDescription: siteDataValue[19],

@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import { useContext } from 'react'
+import SiteDataContext from '../../utils/SiteDataContext'
 
-export default function SEO({siteData}) {
-	const {seoTitle, seoDescription, seoBannerUrl} = siteData
+export default function SEO() {
+	const {seoTitle, seoDescription, seoBannerUrl} = useContext(SiteDataContext)
 	return (
 		<Head>
 			<link rel="icon" href="/favicon.ico" />

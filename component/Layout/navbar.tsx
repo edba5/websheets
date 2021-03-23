@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import { useContext } from 'react'
+import SiteDataContext from '../../utils/SiteDataContext'
 import GiftIcon from './gift-icon'
 
-export default function Navbar({siteData}) {
+export default function Navbar() {
 	const {
 		navMenuText,
 		navMenuUrl,
@@ -9,7 +11,7 @@ export default function Navbar({siteData}) {
 		navButtonUrl,
 		themeColor,
 		logoUrl,
-	} = siteData
+	} = useContext(SiteDataContext)
 	return (
 		<div className="flex">
 			<div className="flex-grow">

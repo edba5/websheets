@@ -1,15 +1,17 @@
 import Image from 'next/image'
+import { useContext } from 'react'
+import SiteDataContext from '../../utils/SiteDataContext'
 
-export default function Footer({siteData}) {
-	const {footerText, creditText, creditAuthor, creditUrl} = siteData
+export default function Footer() {
+	const {copyrightText, footerText, footerLinkableText, footerLinkableUrl} = useContext(SiteDataContext)
 	return (
 		<div className="py-8 text-center text-gray-500 text-sm font-light">
 			<Image src="/images/logo.png" width={50} height={50} />
-			<p>{footerText}</p>
+			<p>{copyrightText}</p>
 			<p>
-				{creditText}{' '}
-				<a href={creditUrl} target="_blank" className="hover:underline">
-					{creditAuthor}
+				{footerText}{' '}
+				<a href={footerLinkableUrl} target="_blank" className="hover:underline">
+					{footerLinkableText}
 				</a>
 			</p>
 		</div>
