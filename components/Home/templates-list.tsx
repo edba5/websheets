@@ -7,7 +7,7 @@ export default function TemplatesList({items}) {
 
 	const renderTemplates = () => {
 		return items.map(({title, tags, imageUrl, destinationUrl}, index) => (
-			<div key={`${title}+${index}`}>
+			<div key={index}>
 				<a href={destinationUrl} target="_blank">
 					<img
 						src={imageUrl}
