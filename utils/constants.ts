@@ -26,71 +26,12 @@ export const techStack: TechStack[] = [
 	},
 ]
 
-export interface Templates {
-	title: string
-	tags: string[]
-	imageUrl: string
-	primaryActionUrl: string
-	secondaryActionUrl: string
-}
-
-export const templates: Templates[] = [
-	{
-		title: 'Websheets Templates',
-		tags: ['landing', 'gallery', 'web'],
-		imageUrl:
-			'https://i.ibb.co/PN9rprx/Screenshot-2021-03-21-at-1-08-05-PM.png',
-		primaryActionUrl: '',
-		secondaryActionUrl: '',
-	},
-	{
-		title: 'Influential Figures',
-		tags: ['profile', 'inspiration'],
-		imageUrl:
-			'https://i.ibb.co/T1y5L7W/Screenshot-2021-03-21-at-1-07-52-PM.png',
-		primaryActionUrl: '',
-		secondaryActionUrl: '',
-	},
-	{
-		title: 'Quotes',
-		tags: ['profile', 'inspiration'],
-		imageUrl:
-			'https://i.ibb.co/PN9rprx/Screenshot-2021-03-21-at-1-08-05-PM.png',
-		primaryActionUrl: '',
-		secondaryActionUrl: '',
-	},
-	{
-		title: 'Influential Figures',
-		tags: ['profile', 'inspiration'],
-		imageUrl:
-			'https://i.ibb.co/T1y5L7W/Screenshot-2021-03-21-at-1-07-52-PM.png',
-		primaryActionUrl: '',
-		secondaryActionUrl: '',
-	},
-	{
-		title: 'Quotes',
-		tags: ['profile', 'inspiration'],
-		imageUrl:
-			'https://i.ibb.co/PN9rprx/Screenshot-2021-03-21-at-1-08-05-PM.png',
-		primaryActionUrl: '',
-		secondaryActionUrl: '',
-	},
-	{
-		title: 'Influential Figures',
-		tags: ['profile', 'inspiration'],
-		imageUrl:
-			'https://i.ibb.co/T1y5L7W/Screenshot-2021-03-21-at-1-07-52-PM.png',
-		primaryActionUrl: '',
-		secondaryActionUrl: '',
-	},
-]
-
 export interface Item {
 	title: string
 	tags: string[]
 	imageUrl: string
 	destinationUrl: string
-	hide: boolean
+	isActive: boolean
 }
 
 export interface SiteData {
@@ -119,28 +60,28 @@ export interface SiteData {
 
 export const defaultSiteData = {
 	// GENERAL
-	logoUrl: "https://media.devlabs.academy/file/WebSheets/app-icon.png",
-	themeColor: "green",
-	darkMode: "false",
+	logoUrl: '/images/logo.png',
+	themeColor: 'green',
+	darkMode: false,
 	// NAVBAR
-	navButtonText: "Treat The Dev",
-	navButtonUrl: "https://buymeacoffee.com/sohafidz",
-	navMenuText: "Documentation",
-	navMenuUrl: "https://docs.websheets.co",
+	navButtonText: 'Treat The Dev',
+	navButtonUrl: 'https://buymeacoffee.com/sohafidz',
+	navMenuText: 'Documentation',
+	navMenuUrl: 'https://docs.websheets.co',
 	//HERO
-	heroTitle: "Build websites with just Google Sheets",
-	heroDescription: "This is an open-sourced project that let's you build websites simply by filling in a Google Sheets template. No accounts, no dashboards, no fees!",
+	heroTitle: 'Build websites with just Google Sheets',
+	heroDescription:
+		"This is an open-sourced project that let's you build websites simply by filling in a Google Sheets template. No accounts, no dashboards, no fees!",
 	//FOOTER
-	copyrightText: "© WebSheets 2021",
-	footerText: "This project was developed by",
-	footerLinkableText: "Tengku Hafidz",
-	footerLinkableUrl: "https://tengkuhafidz.com",
+	copyrightText: '© WebSheets 2021',
+	footerText: 'This project was developed by',
+	footerLinkableText: 'Tengku Hafidz',
+	footerLinkableUrl: 'https://tengkuhafidz.com',
 	//SEO
-	seoTitle: "Websheets",
-	seoDescription: "Build websites with just Google Sheets",
-	seoBannerUrl: "https://media.devlabs.academy/file/WebSheets/app-icon.png"
+	seoTitle: 'Websheets',
+	seoDescription: 'Build websites with just Google Sheets',
+	seoBannerUrl: '/images/banner.png',
 }
-
 export enum SheetsDimension {
 	ROWS = 'ROWS',
 	COLUMNS = 'COLUMNS',
